@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f0f0;
+}
+
+form {
+    background: #ffffff;
+    border: 2px solid #111;
+    padding: 32px 28px 24px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.fila {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6px;
+}
+
+label {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    color: #111;
+}
+ 
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    background: #d9d9d9;
+    border: none;
+    padding: 14px 12px;
+    font-size: 1rem;
+    font-style: italic;
+    color: #555;
+    outline: none;
+    width: 100%;
+}
+
+input.input-error {
+    border: 2px solid red;
+}
+
+#mensajeGeneral {
+    margin-bottom: 2px;
+}
+
+.acciones {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 10px;
+    gap: 12px;
+}
+
+button {
+    background: #d9d9d9;
+    border: none;
+    border-radius: 12px;
+    padding: 18px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #111;
+}
+ 
+button:hover {
+    background: #c4c4c4;
+}
+ 
+.acciones a {
+    text-align: right;
+    font-size: 0.9rem;
+    color: #111;
+    text-decoration: none;
+}
+ 
+.acciones a:hover {
+    text-decoration: underline;
+}
+
+#mensaje {
+    font-size: 0.8rem;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 4px;
+    color: red;
+}
+
+.oculto{
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.modal-overlay.oculto {
+    display: none;
+}
+ 
+.modal-box {
+    background: #ffffff;
+    border: 2px solid #111;
+    padding: 28px 24px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+ 
+.modal-box h3 {
+    font-size: 1.1rem;
+    color: #111;
+}
+ 
+.modal-box p {
+    font-size: 0.85rem;
+    color: #444;
+    line-height: 1.4;
+}
+ 
+.modal-box label {
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+ 
+.modal-acciones {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 4px;
+}
+ 
+.btn-cancelar {
+    background: #f0f0f0;
+    color: #555;
+}
+ 
+.confirmacion {
+    color: green;
+    font-size: 0.85rem;
+    font-style: italic;
+}

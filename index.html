@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<<<<<<< HEAD
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+   <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <form>
+        <div class="fila">
+            <label for="usuario">usuario:</label>
+            <input type="text" id="usuario" name="usuario">
+        </div>
+        
+        <div class="fila">
+            <label for="contraseña">contraseña:</label>
+            <input type="password" id="password" name="password">
+           
+        </div>
+        
+        <div class="acciones">
+            <button type="button" id="iniciarSesionBtn"> iniciar sesión</button>
+            <a href="forgotpassword.html">olvidé mi contraseña</a>
+           
+        </div>
+
+        
+       
+    </form>
+
+     <script type="text/javascript" src="index.js"></script>
+</body>
+
+=======
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar Sesion JS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="modalOverlay" class="modal-overlay oculto">
+        <div class="modal-box">
+            <h3>Restablecer contraseña</h3>
+            <p>Ingresa tu correo electrónico y te enviaremos un enlace para restablecer tu contraseña.</p>
+ 
+            <label for="correo">Correo electrónico: </label>
+            <input type="email" id="correo" placeholder="ejemplo@correo.com">
+            <span id="errorCorreo" class="error-msg oculto"> Ingresa tu Correo Electrónico </span>
+ 
+            <div class="modal-acciones">
+                <button type="button" id="enviarCorreoBtn">Enviar Enlace</button>
+                <button type="button" id="cerrarModalBtn" class="btn-cancelar">Cancelar</button>
+            </div>
+ 
+            <span id="confirmacionCorreo" class="confirmacion oculto"> Enlace Enviado. Revisa tu bandeja de entrada.</span>
+        </div>
+    </div>
+ 
+    <form action="" method="post">
+ 
+        <div class="fila">
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" placeholder="">
+            <span id="errorUsuario" class="error-msg oculto"> Ingresa tu Cuenta de Usuario</span>
+        </div>
+ 
+        <div class="fila">
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" placeholder="">
+            <span id="errorContrasena" class="error-msg oculto"> Ingresa tu Contraseña</span>
+        </div>
+ 
+        <span id="mensajeGeneral" class="error-msg oculto"> Usuario o Contraseña Incorrectos</span>
+ 
+        <div class="acciones">
+            <button type="button" id="iniciarSesionBtn">Iniciar Sesión</button>
+            <a href="#" id="olvideMiContrasenaLink">Olvidé mi Contraseña</a>
+        </div>
+ 
+    </form>
+ 
+    <script src="script.js" defer></script>
+</body>
+>>>>>>> ff24d6d (LOGIN)
+</html>
